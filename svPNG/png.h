@@ -32,8 +32,7 @@ namespace tad{
         std::string aError;
 		PNGException(std::string _in) :aError(_in) {}
 	};
-	void svpng(std::string,
-		std::vector<std::vector<unsigned char>>, Alpha alpha);
+	void svpng(std::string, uint32_t, uint32_t, unsigned char*, Alpha alpha);
 }
 
 #endif /* ifndef __PNG_H__ */
