@@ -24,15 +24,15 @@
 #include <string>
 #include <algorithm>
 namespace tad{
-	enum class Alpha {
-		haveAlpha,
-		noAlpha
-	};
-	struct PNGException {
+    enum class Alpha {
+        haveAlpha,
+        noAlpha
+    };
+    struct PNGException {
         std::string aError;
-		PNGException(std::string _in) :aError(_in) {}
-	};
-	void svpng(std::string, uint32_t, uint32_t, unsigned char*, Alpha alpha);
+        PNGException(std::string _in) :aError(_in) {}
+    };
+    void svpng(std::string, uint32_t, uint32_t, unsigned char*, Alpha alpha);
 }
 
 #endif /* ifndef __PNG_H__ */

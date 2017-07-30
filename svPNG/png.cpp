@@ -39,7 +39,7 @@ namespace tad {
         auto uend = [u32, &crc](){u32(~crc);};
 
         int time = 0;
-        #define printc printf("%d %d\n", time++, crc)
+#define printc printf("%d %d\n", time++, crc)
         if (of.is_open()) {
             of.write("\x89PNG\r\n\32\n", 8);
 

@@ -31,5 +31,5 @@ void test_rgb() {
 
 int main() {
     test_rgb();
-	return 0;
+    return 0;
 }
