@@ -5,3 +5,7 @@
         - modern c++(c++17), fold expression, copy elision, etc.
     - svpng: save png picture
         - lambda
+    - c++98bind2nd: implement bind2d and compose in c++98
+        - c++98, bind2nd, compose two function
+    - notImplement: implement not function in c++ use factor and lambda
+        - c++14, template, lambda
