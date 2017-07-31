@@ -1,5 +1,5 @@
 CC=g++
-CPP_COMP_FLAGS=-m64 -fpic -Wall -Wno-unused -fmax-errors=4 -msse2 -O2 -std=c++17
+CPP_COMP_FLAGS=-m64 -fpic -Wall -Wno-unused -fmax-errors=4 -msse2 -O2 -std=c++14
 CLIBS=
 CPP_INCLUDES=
 
