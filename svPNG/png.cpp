@@ -3,7 +3,7 @@
  *
  *       Filename:  png.cpp
  *
- *    Description:  
+ *    Description:
  *
  *        Version:  1.0
  *        Created:  2017年07月29日 14时59分05秒
@@ -11,7 +11,7 @@
  *       Compiler:  gcc
  *
  *         Author:  Tad Yin (), yinkejie1992@gmail.com
- *   Organization:  
+ *   Organization:
  *
  * =====================================================================================
  */
