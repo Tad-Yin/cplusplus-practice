@@ -50,17 +50,42 @@ struct add{
 };
 
 //implement of add in function overloading
-template<class T, T res = 0>
-struct parse_helper{
-    constexpr std::integral_constant<T, res> result(){ return {}; }
-    template<char digit>
-    constexpr decltype(auto) operator>>(std::integral_constant<char, digit>){
-        return parse_helper<T, res * 10 + digit - '0'>{};
+//template<class T, T res = 0>
+//struct parse_helper{
+//constexpr std::integral_constant<T, res> result(){ return {}; }
+//template<char digit>
+//constexpr decltype(auto) operator>>(std::integral_constant<char, digit>){
+//return parse_helper<T, res * 10 + digit - '0'>{};
+//}
+//};
+//template<char... digits>
+//constexpr decltype(auto) operator""_int() {
+//return (parse_helper<int>{} >> ... >> std::integral_constant<char, digits>{}).result();
+//}
+template<class Curr, class Func>
+struct fold_helper{
+    Func _fun;
+    constexpr fold_helper(Func fun) : _fun(fun) {}
+    constexpr Curr result() { return {}; }
+    template<class T>
+    constexpr decltype(auto) operator>>(T v) {
+        return fold_helper<decltype(_fun(Curr{}, v)), Func>{_fun};
     }
 };
+template<class T, class Func>
+constexpr decltype(auto) make_fold_helper(Func f, T init = {}) {
+    return fold_helper<T, Func>{f};
+}
+template<class T, char... digits>
+constexpr decltype(auto) parse_number() {
+    return (make_fold_helper([](auto a, auto b) {
+            return std::integral_constant<T, a.value * 10 + b.value - '0'>{};
+        }, std::integral_constant<T, 0>{}) >> ... >> std::integral_constant<char ,digits>{}).result();
+}
+
 template<char... digits>
-constexpr decltype(auto) operator""_int() {
-    return (parse_helper<int>{} >> ... >> std::integral_constant<char, digits>{}).result();
+constexpr decltype(auto) operator""_int(){
+    return parse_number<int, digits...>();
 }
 template<class T, T a, T b>
 constexpr decltype(auto) operator+(
