@@ -1,0 +1,48 @@
+著名代码：
+hana:c++14黑魔法
+protobuff:from google
+linq:modern c++
+
+
+各大会议：
+ruby conf China
+go hack
+microsoft hack
+
+知识点：
+fp
+compiler
+system
+algorithm
+SLAM-AR
+
+深度学习思路：
+1.融合特征
+2.GAN退化图像
+3.SSD做特征点选取
+
+项目经历
+1.ACM（本科网页开发）
+2.机器手臂深度学习识别定位抓取。
+3.手臂肌肉电信号插件接口编写(native c++，python, matlab, c#)
+
+招聘竞赛：
+海康 滴滴 阿里 华为 网易
+谷歌 工行 招商 头条 平多多 集赞
+
+海康比赛 5月
+算法类型：基础算法，机器人
+
+阿里天池 时间不固定
+算法类型：机器学习，深度学习
+
+百度之星 7月
+算法类型：ACM和人机交互
+
+华为 3月
+算法类型：基础算法 视频网络节点cdn
+
+滴滴无人车 3月
+算法类型：无人车驾驶
+
+谷歌：code jam 2月
