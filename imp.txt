@@ -3,18 +3,25 @@ hana:c++14黑魔法
 protobuff:from google
 linq:modern c++
 
-
 各大会议：
 ruby conf China
 go hack
 microsoft hack
+google gdg
+LUG
 
 知识点：
+工程：
 fp
 compiler
 system
+design partern
+modern c++
+算法：
 algorithm
+ml
 SLAM-AR
+math
 
 深度学习思路：
 1.融合特征
@@ -46,3 +53,5 @@ SLAM-AR
 算法类型：无人车驾驶
 
 谷歌：code jam 2月
+
+parse:现代语言搞个Monadic Parser的库，写个现代语言的Transpiler，搞搞fv mldl
