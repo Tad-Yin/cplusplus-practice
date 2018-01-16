@@ -1,4 +1,4 @@
-### IMPORTANT THINGS TO MEMO
+ ### IMPORTANT THINGS TO MEMO
 
 ---------------------------------------
 - 著名代码：
@@ -60,4 +60,7 @@
     - parse:现代语言搞个Monadic Parser的库，写个现代语言的Transpiler，搞搞fv mldl
 - LINUX生产力工具：
     - atom + 插件
-    - vim + gdb(ddd) + make + valgrind + doxygen
+    - vim + gdb(ddd) + make + valgrind + doxygen + google_test
+- book to buy
+    - csapp
+    - Linux 多线程服务端编程
